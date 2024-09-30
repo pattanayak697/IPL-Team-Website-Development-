@@ -1,0 +1,10 @@
+﻿@font-face
+{
+	src : url(parkway.otf);
+	font-family:shanky;
+}
+
+body
+{
+	font-family:shanky;
+}

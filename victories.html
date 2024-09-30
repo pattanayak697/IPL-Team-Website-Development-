@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSK - Victories</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+    <div class="center" id="top">
+        <img src="Resources/14.jpg" alt="CSK Logo" height="150" width="750">
+    </div>
+
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="victories.html">Our Victories</a>
+        <a href="players.html">Squad</a>
+        <video style="float:right;" src="Resources/15.mp4" type="video/mp4" width="60" height="55" autoplay loop muted></video>
+    </div>
+
+    <div class="main">
+        <div class="topcenter">
+            <img src="Resources/19.jpg" alt="Helmet in Stadium" height="580" width="580"><br><br>
+        </div>
+        <div class="victories">
+            <div class="victory-year">
+                <h2 style="color: #F15C19;">2010</h2>
+                <p>Win IPL Cup First Time</p>
+            </div>
+            <div class="victory-year">
+                <h2 style="color: #F15C19;">2010</h2>
+                <p>Win CLT20 Cup First Time</p>
+            </div>
+            <div class="victory-year">
+                <h2 style="color: #F15C19;">2011</h2>
+                <p>Win IPL Cup Second Time</p>
+            </div>
+            <div class="victory-year">
+                <h2 style="color: #F15C19;">2014</h2>
+                <p>Win CLT20 Cup Second Time</p>
+            </div>
+            <div class="victory-year">
+                <h2 style="color: #F15C19;">2018</h2>
+                <p>Win IPL Cup Third Time</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div id="footercontent">
+            <span style="font-size: 30px; color: white;">Follow Us At:</span><br>
+            <a href="https://www.instagram.com/chennaiipl/?hl=en" class="followlink">
+                <img src="Resources/Instagram.png" alt="Instagram" class="followimg">
+            </a>
+            <a href="https://www.youtube.com/channel/UC2J_VKrAzOEJuQvFFtj3KUw" class="followlink">
+                <img src="Resources/Youtube.jpg" alt="YouTube" class="followimg">
+            </a>
+            <a href="https://www.facebook.com/TheChennaiSuperKings/" class="followlink">
+                <img src="Resources/Facebook.png" alt="Facebook" class="followimg">
+            </a>
+        </div>
+        <div id="returntop">
+            <a href="#top" style="text-decoration:none; color: grey;">
+                <pre style="font-family: shanky; color: white; font-size: 30px;">Return to top of the page.</pre>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            myFunction();
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
